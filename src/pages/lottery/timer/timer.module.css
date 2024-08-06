@@ -1,0 +1,39 @@
+.digits {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 24px;
+}
+
+.digits > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 4px;
+
+  background-image: url(/src/images/lottery/digit-bg.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  background-color: var(--base-1, #c64444);
+  box-shadow: 0px 12px 16px 0px #a53434 inset;
+
+  width: 32px;
+  height: 48px;
+
+  color: var(--white, #fff);
+
+  font-family: 'Bebas Neue';
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.digits > li:nth-child(even):not(:last-child) {
+  margin-right: 8px;
+}
+.digits > li:nth-child(odd) {
+  margin-right: 4px;
+}

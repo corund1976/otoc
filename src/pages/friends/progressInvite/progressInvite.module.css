@@ -1,0 +1,47 @@
+.progress_invite_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  margin-bottom: 16px;
+}
+
+.friends {
+  color: var(--white, #fff);
+  text-transform: uppercase;
+
+  font-family: 'Gilroy';
+  font-size: 20px;
+  font-weight: 1000;
+  line-height: 1.4;
+  letter-spacing: 1.6px;
+
+  margin-right: 8px;
+}
+
+.btn_info {
+  border: none;
+  background-color: transparent;
+
+  background-image: url(/src/images/info.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  width: 24px;
+  height: 24px;
+}
+
+.btn_invite {
+  composes: btn-main from global;
+
+  font-size: 10px;
+  letter-spacing: 0.8px;
+
+  width: 80px;
+  height: 40px;
+
+  margin-left: auto;
+}

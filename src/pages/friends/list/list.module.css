@@ -1,0 +1,78 @@
+.list {
+  width: 100%;
+}
+
+.list > li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.list > li {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 20px;
+  background-color: var(--Gold, #fbcf60);
+
+  width: 40px;
+  height: 40px;
+
+  margin-right: 12px;
+
+  color: var(--base-2, #cb5050);
+  text-align: center;
+  text-transform: uppercase;
+
+  font-family: 'Gilroy';
+  font-size: 14px;
+  font-weight: 1000;
+  line-height: 1.4;
+  letter-spacing: 1.12px;
+}
+
+.name {
+  color: var(--white, #fff);
+  text-transform: uppercase;
+
+  font-family: 'Gilroy';
+  font-size: 14px;
+  font-weight: 1000;
+  line-height: 1.4;
+  letter-spacing: 1.12px;
+
+  margin-bottom: 3px;
+}
+
+.invited {
+  color: var(--body, #a1a1a1);
+
+  font-family: 'Gilroy';
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.reward {
+  display: flex;
+  align-items: center;
+
+  color: var(--white, #fff);
+
+  font-family: 'Bebas Neue';
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+
+  margin-left: auto;
+}
+
+.reward > img {
+  width: 32px;
+  height: 32px;
+  margin-right: 2px;
+}

@@ -1,0 +1,13 @@
+:root {
+  --body: #a1a1a1;
+  --white: #ffffff;
+  --base-1: #c64444;
+  --base-2: #cb5050;
+  --base-3: #a93535;
+  --gold: #fbcf60;
+
+  --trans-time: 300ms;
+  --trans-func: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --window-height: 100%;
+}

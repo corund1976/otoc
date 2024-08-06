@@ -1,0 +1,49 @@
+.stats {
+  display: flex;
+  justify-content: space-between;
+
+  border-radius: 16px;
+  border: 2px solid var(--base-3, #a93535);
+
+  padding: 24px;
+
+  width: 100%;
+
+  margin-bottom: 24px;
+}
+
+.stats > li {
+  flex-basis: calc((100% - 24px) / 2);
+}
+
+.stats > li > .label {
+  color: var(--body, #a1a1a1);
+  text-transform: uppercase;
+
+  font-family: 'Gilroy';
+  font-size: 10px;
+  font-weight: 1000;
+  line-height: 100%;
+  letter-spacing: 0.8px;
+
+  margin-bottom: 8px;
+}
+
+.stats > li > .value {
+  display: flex;
+  align-items: center;
+
+  color: var(--white, #fff);
+
+  font-family: 'Bebas Neue';
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stats > li > .value > img {
+  width: 32px;
+  height: 32px;
+
+  margin-right: 2px;
+}

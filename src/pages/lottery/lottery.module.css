@@ -1,0 +1,181 @@
+.section {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--base-1, #cb5050);
+
+  background-image: url(/src/images/lottery/lottery-bg.webp);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top -96px center;
+
+  padding-top: 370px;
+
+  height: var(--window-height);
+
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: 50%;
+
+  width: 244px;
+  height: 244px;
+
+  background-image: url(/src/images/lottery/tickets.webp);
+  background-repeat: no-repeat;
+  background-size: 244px;
+  background-position: center;
+
+  transform: translateX(-50%) rotate(0);
+}
+
+.section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 277.5px;
+  height: 369px;
+
+  background-image: url(/src/images/lottery/lototron.webp);
+  background-repeat: no-repeat;
+  background-size: 277.5px;
+  background-position: bottom center;
+
+  transform: translateX(-55%);
+}
+
+.section_animated {
+  composes: section;
+}
+
+.section_animated::before {
+  animation-name: spinning;
+  -webkit-animation-name: spinning;
+
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes spinning {
+  from {
+    transform: translateX(-50%) rotate(0);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+.block {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 40px 40px 0px 0px;
+  background-color: var(--base-2, #cb5050);
+
+  padding: 24px 24px 130px;
+
+  width: 100%;
+}
+
+.title {
+  color: var(--white, #fff);
+  text-transform: uppercase;
+
+  font-family: 'Gilroy';
+  font-size: 14px;
+  font-weight: 1000;
+  line-height: 140%;
+  letter-spacing: 1.12px;
+
+  margin-bottom: 8px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+
+  border-radius: 16px;
+  border: 2px solid var(--base-3, #a93535);
+
+  padding: 24px 8px;
+
+  width: 100%;
+
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 375px) {
+  .stats {
+    padding: 24px;
+
+    width: 327px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.label {
+  color: var(--body, #a1a1a1);
+  text-transform: uppercase;
+
+  font-family: 'Gilroy';
+  font-size: 10px;
+  font-weight: 1000;
+  line-height: 100%;
+  letter-spacing: 0.8px;
+
+  margin-bottom: 8px;
+}
+
+.value {
+  display: flex;
+  align-items: center;
+
+  color: var(--white, #fff);
+
+  font-family: 'Bebas Neue';
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.value > img {
+  width: 32px;
+  height: 32px;
+
+  margin-right: 2px;
+}
+
+.btn_go {
+  border: none;
+  background-color: transparent;
+
+  background-image: url(/src/images/lottery/lets-go.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  width: 100%;
+  height: 72px;
+}

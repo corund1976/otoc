@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local('Gilroy-Bold'),
+    url(/src/fonts/Gilroy-Bold.woff2) format('woff2'),
+    url(/src/fonts/Gilroy-Bold.ttf) format('opentype');
+}
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 1000;
+  font-display: swap;
+  src:
+    local('Gilroy-Heavy'),
+    url(/src/fonts/Gilroy-Heavy.woff2) format('woff2'),
+    url(/src/fonts/Gilroy-Heavy.ttf) format('opentype');
+}
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local('BebasNeueBold'),
+    url(/src/fonts/BebasNeue-Bold.woff2) format('woff2'),
+    url(/src/fonts/BebasNeue-Bold.ttf) format('opentype');
+}

@@ -1,0 +1,9 @@
+.container {
+  padding: 0 12px;
+}
+@media screen and (min-width: 375px) {
+  .container {
+    padding-left: calc((100% - 375px) / 2 + 24px);
+    padding-right: calc((100% - 375px) / 2 + 24px);
+  }
+}

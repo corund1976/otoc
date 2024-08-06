@@ -1,0 +1,19 @@
+.section {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--base-1, #cb5050);
+
+  background-image: url(/src/images/home/home-bg.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+
+  padding-top: 270px;
+
+  height: var(--window-height);
+
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}

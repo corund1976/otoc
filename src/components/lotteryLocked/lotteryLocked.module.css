@@ -1,0 +1,52 @@
+.locked {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 40px 40px 0px 0px;
+  background-color: var(--base-2, #cb5050);
+
+  padding: 40px 24px 130px;
+
+  width: 100%;
+
+  position: relative;
+  z-index: 1;
+}
+
+.img {
+  width: 80px;
+  height: 80px;
+
+  margin-bottom: 24px;
+}
+
+.title {
+  color: var(--white, #fff);
+  text-align: center;
+  text-transform: uppercase;
+
+  font-family: 'Gilroy';
+  font-size: 20px;
+  font-weight: 1000;
+  line-height: 1.4;
+  letter-spacing: 1.6px;
+
+  max-width: 327px;
+
+  margin-bottom: 16px;
+}
+
+.text {
+  color: var(--body, #a1a1a1);
+  text-align: center;
+
+  font-family: 'Gilroy';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+
+  max-width: 327px;
+}

@@ -1,0 +1,5 @@
+.backdrop {
+  composes: backdrop from global;
+
+  display: flex;
+}

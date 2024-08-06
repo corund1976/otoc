@@ -1,0 +1,75 @@
+.selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selector > p {
+  text-align: left;
+  color: var(--text-dark, #787e95);
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+
+  margin-right: 12px;
+}
+@media screen and (min-width: 768px) {
+  .selector > p {
+    font-size: 16px;
+  }
+}
+
+.toggler_active {
+  flex-basis: 40px;
+  flex-shrink: 0;
+
+  background-color: var(--opacity-green-20, rgba(98, 234, 153, 0.2));
+
+  border: none;
+  border-radius: 8px;
+
+  width: 40px;
+  height: 16px;
+
+  transition: background-color var(--trans-time) var(--trans-func);
+
+  position: relative;
+}
+
+.toggler_active:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.toggler_active::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+
+  width: 24px;
+  height: 24px;
+
+  background-color: var(--main-green, #62ea99);
+
+  border-radius: 50%;
+}
+
+.toggler {
+  composes: toggler_active;
+
+  background-color: var(--main-dark, #13141a);
+}
+
+.toggler:hover {
+  background-color: var(--opacity-white-10, rgba(255, 255, 255, 0.1));
+}
+
+.toggler::after {
+  left: 0;
+  right: unset;
+
+  background-color: var(--text-dark, #787e95);
+}

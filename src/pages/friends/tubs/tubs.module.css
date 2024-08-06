@@ -1,0 +1,56 @@
+.tubs {
+  display: flex;
+
+  width: 100%;
+
+  margin-bottom: 24px;
+}
+
+.tubs > li {
+  flex-basis: 160px;
+  flex-shrink: 0;
+
+  border-radius: 16px;
+  border: 2px solid var(--base-3, #a93535);
+
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tubs > li:not(:last-child) {
+  margin-right: 7px;
+}
+
+.tubs > li > img {
+  width: 64px;
+  height: 64px;
+
+  margin-bottom: 16px;
+}
+
+.name {
+  color: var(--white, #fff);
+  text-align: center;
+  text-transform: uppercase;
+
+  font-family: 'Gilroy';
+  font-size: 14px;
+  font-weight: 1000;
+  line-height: 1.4;
+  letter-spacing: 1.12px;
+
+  margin-bottom: 8px;
+}
+
+.text {
+  color: var(--body, #a1a1a1);
+  text-align: center;
+
+  font-family: 'Gilroy';
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 140%;
+}

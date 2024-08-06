@@ -1,0 +1,126 @@
+.control {
+  background-color: transparent;
+
+  border: 1px solid var(--opacity-white-20, rgba(255, 255, 255, 0.2));
+  border-radius: 10px;
+
+  padding-left: 16px;
+  padding-right: 16px;
+
+  width: 100%;
+  height: 56px;
+
+  cursor: pointer !important;
+
+  transition:
+    color var(--trans-time) var(--trans-func),
+    border-color var(--trans-time) var(--trans-func);
+}
+@media screen and (min-width: 768px) {
+  .control {
+    border-radius: 12px;
+
+    height: 64px;
+  }
+}
+
+.control:hover {
+  color: var(--main-white, #fff);
+  border-color: var(--text-dark, #787e95);
+}
+
+.control_active {
+  composes: control;
+  border-color: var(--text-dark, #787e95);
+}
+
+/* .btn_profile:has(.btn_copy:hover) {
+  pointer-events: none;
+} */
+
+.single_value {
+  text-align: left;
+  color: var(--text--dark, #787e95);
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .single_value {
+    font-size: 16px;
+  }
+}
+
+.dropdown_init > svg {
+  transform: rotate(0deg);
+  fill: var(--text-dark, #787e95);
+}
+
+.dropdown_rotate > svg {
+  transform: rotate(180deg);
+  fill: var(--main-white, #ffffff);
+}
+
+.menu {
+  /* z-index: 2 !important; */
+
+  background-color: var(--cards-dark, #1c2026);
+
+  border: 1px solid var(--opacity-white-20, rgba(255, 255, 255, 0.2));
+  border-radius: 10px;
+
+  padding: 16px;
+
+  margin-top: 4px; /* отступ вниз dropdown от select */
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    border-radius: 12px;
+  }
+}
+
+.option {
+  text-align: left;
+  color: var(--text-dark, #787e95);
+
+  font-size: 14px !important;
+  font-weight: 500;
+  line-height: 1.4;
+
+  cursor: pointer !important;
+
+  transition: color var(--trans-time) var(--trans-func);
+}
+@media screen and (min-width: 768px) {
+  .option {
+    font-size: 16px !important;
+  }
+}
+
+.option:hover {
+  color: var(--main-white, #ffffff);
+}
+
+.option:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+/* убираю курсор при "селекте" в focus */
+.control input:focus,
+.control input:active {
+  color: transparent !important;
+  border-color: #ffffff;
+}
+
+.placeholder {
+  text-align: left;
+  color: var(--text-dark, #787e95);
+
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  .placeholder {
+    font-size: 16px;
+  }
+}

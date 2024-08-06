@@ -1,0 +1,56 @@
+.reward {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 16px;
+  background-color: var(--base-1, #c64444);
+
+  padding: 24px 24px 9px;
+
+  width: 100%;
+
+  margin-bottom: 8px;
+}
+
+.label {
+  color: var(--body, #a1a1a1);
+  text-transform: uppercase;
+
+  font-family: 'Gilroy';
+  font-size: 10px;
+  font-weight: 1000;
+  line-height: 1;
+  letter-spacing: 0.8px;
+
+  margin-bottom: 8px;
+}
+
+.value {
+  display: flex;
+  align-items: center;
+
+  color: var(--white, #fff);
+
+  font-family: 'Bebas Neue';
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.value > img {
+  width: 32px;
+  height: 32px;
+
+  margin-left: 2px;
+}
+
+.btn_withdraw {
+  composes: btn-scnd from global;
+
+  width: 120px;
+  height: 40px;
+
+  font-size: 10px;
+  letter-spacing: 0.8px;
+}

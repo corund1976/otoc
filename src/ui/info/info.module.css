@@ -1,0 +1,60 @@
+.info {
+  flex-shrink: 0;
+
+  display: inline-block;
+
+  color: var(--text-dark, #787e95);
+
+  width: 20px;
+  height: 20px;
+
+  transition: color var(--trans-time) var(--trans-func);
+
+  position: relative;
+}
+
+.info:hover {
+  color: var(--main-white, #ffffff);
+}
+
+.info_text {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 100%;
+  width: 250px;
+
+  text-align: left;
+  color: var(--text-dark, #787e95);
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+
+  background-color: var(--cards-dark, #1c2026);
+
+  border: 1px solid var(--opacity-white-10, rgba(255, 255, 255, 0.1));
+  border-radius: 0px 12px 12px 12px;
+
+  padding: 16px;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity var(--trans-time) var(--trans-func),
+    visibility var(--trans-time) var(--trans-func);
+}
+
+.info:hover .info_text {
+  opacity: 1;
+  visibility: visible;
+
+  z-index: 1;
+}
+
+.info > svg {
+  stroke: currentColor;
+
+  width: 20px;
+  height: 20px;
+}

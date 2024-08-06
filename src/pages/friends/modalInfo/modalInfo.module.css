@@ -1,0 +1,203 @@
+.modal_hidden {
+  transform: translateY(200%);
+
+  transition: transform var(--trans-time) var(--trans-func);
+}
+
+.modal {
+  composes: modal_hidden;
+
+  transform: translateY(0);
+
+  border-radius: 40px 40px 0px 0px;
+  background-color: var(--Base---1, #c64444);
+
+  box-shadow: 0px 4px 24px 0px rgba(255, 255, 255, 0.15) inset;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  /* max-height: 350px; */
+  width: 100%;
+
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: auto;
+
+  overflow-y: auto;
+
+  position: relative;
+}
+
+.modal::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 24px;
+  height: 4px;
+
+  border-radius: 2px;
+  background-color: var(--base-3, #a93535);
+}
+
+.container {
+  padding: 0;
+}
+@media screen and (min-width: 375px) {
+  .container {
+    padding: 0 calc((100% - 375px) / 2 + 24px);
+  }
+}
+
+.title {
+  color: var(--white, #fff);
+  text-align: center;
+  text-transform: uppercase;
+
+  font-family: 'Gilroy';
+  font-size: 20px;
+  font-weight: 1000;
+  line-height: 1.4;
+  letter-spacing: 1.6px;
+
+  margin-bottom: 16px;
+}
+
+.under_title {
+  color: var(--body, #a1a1a1);
+  text-align: center;
+
+  font-family: 'Gilroy';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+
+  margin-bottom: 24px;
+}
+
+.points {
+  margin-bottom: 24px;
+}
+
+.points > li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.points > li {
+  display: flex;
+  align-items: center;
+
+  border-radius: 16px;
+  border: 2px solid var(--base-3, #a93535);
+
+  padding: 16px;
+}
+
+.medal {
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(/src/images/friends/medal.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  padding-top: 4px;
+
+  width: 64px;
+  height: 64px;
+
+  margin-right: 16px;
+
+  color: #ddb349;
+  text-align: center;
+
+  font-family: 'Bebas Neue';
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.desc {
+  color: var(--white, #fff);
+
+  font-family: 'Gilroy';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.disclaimer {
+  color: var(--body, #a1a1a1);
+
+  font-family: 'Gilroy';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* .stats {
+  flex-grow: 1;
+}
+
+.friends {
+  color: var(--white, #fff);
+  text-transform: uppercase;
+
+  font-family: 'Gilroy';
+  font-size: 14px;
+  font-weight: 1000;
+  line-height: 1.4;
+  letter-spacing: 1.12px;
+
+  margin-bottom: 8px;
+}
+
+.ticket_token_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket_token_wrapper > li {
+  flex-basis: calc((100% - 8px) / 2);
+}
+
+.label {
+  color: var(--body, #a1a1a1);
+  text-transform: uppercase;
+
+  font-family: 'Gilroy';
+  font-size: 10px;
+  font-weight: 1000;
+  line-height: 100%;
+  letter-spacing: 0.8px;
+
+  margin-bottom: 8px;
+}
+
+.value {
+  display: flex;
+  align-items: center;
+
+  color: var(--white, #fff);
+
+  font-family: 'Bebas Neue';
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.value > img {
+  width: 32px;
+  height: 32px;
+
+  margin-right: 2px;
+} */

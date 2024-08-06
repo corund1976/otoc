@@ -1,0 +1,120 @@
+/* MAIN (gold) */
+.btn-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 32px;
+  border: none;
+
+  background-color: var(--gold, #fbcf60);
+  box-shadow:
+    0px 12px 12px 0px #795c12,
+    0px 8px 16px 0px #ffe9b0 inset,
+    0px -8px 16px 0px #a78226 inset;
+
+  color: var(--base-2, #cb5050);
+  text-transform: uppercase;
+  text-align: center;
+
+  font-family: 'Gilroy';
+  font-weight: 1000;
+  line-height: 1;
+
+  padding-left: 18px;
+  padding-right: 18px;
+
+  transition: box-shadow var(--trans-time) var(--trans-func);
+}
+
+.btn-main:active {
+  box-shadow:
+    0px 8px 16px 0px #ffe9b0 inset,
+    0px -8px 16px 0px #a78226 inset;
+}
+
+.btn-main:disabled {
+  background-color: var(--body, #a1a1a1);
+  box-shadow: unset;
+  pointer-events: none;
+}
+
+/* .btn-main > svg {
+  stroke: currentColor;
+  margin-left: 8px;
+} */
+
+/* SCND (red) */
+.btn-scnd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 32px;
+  border: none;
+
+  background-color: var(--base-2, #cb5050);
+  box-shadow:
+    0px 12px 12px 0px #a93636,
+    0px 8px 16px 0px #f38888 inset,
+    0px -8px 16px 0px #a33232 inset;
+
+  color: var(--white, #fff);
+  text-transform: uppercase;
+
+  font-family: 'Gilroy';
+  font-weight: 1000;
+  line-height: 1;
+
+  padding-left: 18px;
+  padding-right: 18px;
+
+  transition: box-shadow var(--trans-time) var(--trans-func);
+}
+
+.btn-scnd:active {
+  box-shadow:
+    0px 8px 16px 0px #f38888 inset,
+    0px -8px 16px 0px #a33232 inset;
+}
+
+.btn-scnd:disabled {
+  background-color: var(--body, #a1a1a1);
+  box-shadow: unset;
+  pointer-events: none;
+}
+
+/* .btn-scnd > svg {
+  stroke: currentColor;
+  margin-left: 8px;
+} */
+
+.btn-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  background-color: transparent;
+
+  background-image: url(/src/images/close.svg);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+}
+
+.btn-info {
+  border: none;
+  background-color: transparent;
+
+  background-image: url(/src/images/info.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  width: 20px;
+  height: 20px;
+}
