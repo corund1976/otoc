@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-// import WebApp from '@twa-dev/sdk';
+import WebApp from '@twa-dev/sdk';
 import { TonConnectUIProvider } from '@tonconnect/ui-react';
 
 import store from 'redux/store';
@@ -17,11 +17,10 @@ import 'css/index.css';
 import 'css/buttons.css';
 import 'css/snippets.css';
 
-const { WebApp } = window.Telegram;
 WebApp.ready();
 WebApp.expand();
 WebApp.enableClosingConfirmation();
-// WebApp.disableVerticalSwipes();
+WebApp.disableVerticalSwipes();
 const bgColor = '#cb5050';
 WebApp.setHeaderColor(bgColor);
 WebApp.setBackgroundColor(bgColor);
